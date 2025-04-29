@@ -10,21 +10,11 @@ collections:
     label: "Pagina Acasă"
     file: "dist/index.html"
     fields:
-      - { label: "Titlu principal", name: "title", widget: "string" }
-      - { label: "Descriere scurtă", name: "description", widget: "text" }
+      - {label: "Titlu principal", name: "title", widget: "string"}
+      - {label: "Descriere scurtă", name: "description", widget: "text"}
 
   - name: "despre"
     label: "Despre Noi"
     file: "dist/despre.html"
     fields:
-      - { label: "Text principal", name: "body", widget: "markdown" }
-
-  - name: "pagini"
-    label: "Pagini"
-    files:
-      - file: "content/pagini/despre.md"
-        label: "Despre noi"
-        name: "despre"
-        fields:
-          - { label: "Titlu", name: "title", widget: "string" }
-          - { label: "Conținut", name: "body", widget: "markdown" }
+      - {label: "Text principal", name: "body", widget: "markdown"}
