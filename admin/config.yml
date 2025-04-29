@@ -6,7 +6,17 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "articole"
+  - name: "pages"
+    label: "Pagini"
+    files:
+      - file: "content/pages/despre.md"
+        label: "Despre"
+        name: "despre"
+        fields:
+          - { label: "Titlu", name: "title", widget: "string" }
+          - { label: "Conținut", name: "body", widget: "markdown" }
+
+  - name: "articles"
     label: "Articole"
     folder: "content/articole"
     create: true
