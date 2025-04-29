@@ -1,17 +1,5 @@
-backend:
-  name: git-gateway
-  branch: main
+---
+title: "Despre noi"
+---
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
-
-collections:
-  - name: "pagini"
-    label: "Pagini"
-    files:
-      - file: "content/pages/despre.md"
-        label: "Despre noi"
-        name: "despre"
-        fields:
-          - { label: "Titlu", name: "title", widget: "string" }
-          - { label: "Conținut", name: "body", widget: "markdown" }
+Bine ați venit pe site-ul nostru! Suntem o companie dedicată tururilor virtuale profesionale.
