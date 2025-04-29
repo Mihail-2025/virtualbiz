@@ -1,14 +1,23 @@
 <!doctype html>
-<html>
+<html lang="ro">
   <head>
     <meta charset="utf-8" />
     <title>Admin VirtualBiz</title>
+
+    <!-- Widgetul de autentificare Netlify Identity (obligatoriu pentru login) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Biblioteca Netlify-CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </head>
+
   <body>
+    <!-- NU mai punem CMS_MANUAL_INIT; lăsăm biblioteca să pornească singură -->
     <script>
-      window.CMS_MANUAL_INIT = true;
-      window.CMS.init({ config: '/admin/config.yml' });
+      window.NetlifyIdentity.init();          // opțional, dar recomandat
+      window.CMS.init({                      // îi spunem unde e config-ul
+        config: '/admin/config.yml'
+      });
     </script>
   </body>
 </html>
