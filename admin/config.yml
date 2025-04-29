@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pagini"
+    files:
+      - file: "content/pages/despre.md"
+        label: "Despre noi"
+        name: "despre"
+        fields:
+          - { label: "Titlu", name: "title", widget: "string" }
+          - { label: "Conținut", name: "body", widget: "markdown" }
