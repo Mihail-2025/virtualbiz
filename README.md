@@ -1,3 +1,3 @@
-# VirtualBiz
+# VirtualBiz static site
 
-Site static cu Netlify CMS pentru administrare conținut.
+Proiect demo pentru Netlify CMS.
