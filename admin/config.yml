@@ -1,27 +1,18 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Mihail-2025/virtualbiz
   branch: main
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "pagini"
+    label: "Pagini"
     files:
-      - file: "content/pages/despre.md"
-        label: "Despre noi"
-        name: "despre"
+      - label: "Pagina Principală"
+        name: "acasa"
+        file: "index.html"
         fields:
           - { label: "Titlu", name: "title", widget: "string" }
           - { label: "Conținut", name: "body", widget: "markdown" }
-
-  - name: "articole"
-    label: "Articole"
-    folder: "content/articole"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Titlu", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Conținut", name: "body", widget: "markdown" }
